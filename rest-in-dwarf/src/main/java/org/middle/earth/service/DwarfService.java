@@ -10,9 +10,9 @@ public class DwarfService {
     public String payMe(int age, int waist) {
         String result;
         if (age < 150) {
-            result = MessageFormat.format("You''re a {0} year old dwarf, too young, so keep working hard!", age);
+            result = MessageFormat.format("You''re a {0}-year-old dwarf, too young, so keep working hard!", age);
         } else {
-            result = MessageFormat.format("You''re an old {0} year old dwarf, you deserve {1} mithril coins this month!", age, 100 * waist);
+            result = MessageFormat.format("You''re a {0}-year-old dwarf, you deserve {1} mithril coins this month!", age, 100 * waist);
         }
         return result;
     }
